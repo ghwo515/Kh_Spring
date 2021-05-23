@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+<fullyQualifiedTypeName name="com.kh.first.emp.model.dao.EmpDao"/>
+<fullyQualifiedTypeName name="com.kh.first.emp.model.service.EmpService"/>
+<fullyQualifiedTypeName name="com.kh.first.emp.model.dto.EmpDto"/>
+<fullyQualifiedTypeName name="java.sql.Date"/>
+<fullyQualifiedTypeName name="org.springframework.stereotype.Component"/>
+<fullyQualifiedTypeName name="org.apache.ibatis.session.SqlSession"/>
+<fullyQualifiedTypeName name="org.springframework.stereotype.Repository"/>
+<fullyQualifiedTypeName name="java.util.List"/>
+<fullyQualifiedTypeName name="org.springframework.beans.factory.annotation.Autowired"/>
+<fullyQualifiedTypeName name="com.kh.first.dept.model.dao.DeptDao"/>
+<fullyQualifiedTypeName name="com.kh.first.dept.model.dto.DeptDto"/>
+<fullyQualifiedTypeName name="org.springframework.stereotype.Service"/>
+<fullyQualifiedTypeName name="com.kh.first.dept.model.service.DeptService"/>
+</qualifiedTypeNameHistroy>

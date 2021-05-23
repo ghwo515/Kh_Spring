@@ -1,0 +1,15 @@
+package com.kh.first.emp.model.dao;
+
+import com.kh.first.emp.model.dto.EmpDto;
+
+public class EmpDao {
+	
+	public int empCount() {
+		
+		return 0;
+	}
+	public int insertEmp(EmpDto dto) {
+		
+		return 0;
+	}
+}

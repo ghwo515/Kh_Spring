@@ -1,0 +1,42 @@
+package com.kh.first.emp.model.service;
+
+import java.util.List;
+
+import com.kh.first.emp.model.dao.EmpDao;
+import com.kh.first.emp.model.dto.EmpDto;
+
+public class EmpServiceImpl implements EmpService{
+	private EmpDao dao;
+	
+	@Override
+	public int empCount() {
+		
+		return dao.empCount();
+	}
+
+	@Override
+	public EmpDto selectOneEmp(int empno) {
+		return dao.selectOneEmp(empno);
+	}
+
+	@Override
+	public List<EmpDto> selectListEmp(int startPage, int limit) {
+		return dao.selectListEmp(startPage, limit);
+	}
+
+	@Override
+	public int insertEmp(EmpDto dto) {
+		return dao.insertEmp(dto);
+	}
+
+	@Override
+	public int updateEmp(EmpDto dto) {
+		return dao.updateEmp(dto);
+	}
+
+	@Override
+	public int deleteEmp(EmpDto dto) {
+		return dao.deleteEmp(dto);
+	}
+	
+}

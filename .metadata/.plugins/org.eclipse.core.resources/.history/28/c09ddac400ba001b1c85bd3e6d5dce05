@@ -1,0 +1,5 @@
+package com.kh.first.emp.model.dao;
+
+public class EmpDao {
+
+}

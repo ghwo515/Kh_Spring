@@ -1,0 +1,33 @@
+package com.kh.first.emp.model.dao;
+
+import java.util.List;
+
+import org.apache.ibatis.session.SqlSession;
+import org.springframework.stereotype.Repository;
+
+import com.kh.first.emp.model.dto.EmpDto;
+
+@Repository("empDao")
+public class EmpDao {
+	private SqlSession sqlSession;
+	
+	public int empCount() {
+		return 0;
+	}
+	public EmpDto selectOneEmp(int empno) {
+		return null;
+	}
+	public List<EmpDto> selectListEmp(int startPage, int limit) {
+		return sqlSession.selectList("Emp.selectEmp");
+	}
+	public int insertEmp(EmpDto dto) {
+		return sqlSession.insert("Emp.insertEmp", dto);
+	}
+	public int updateEmp(EmpDto dto) {
+		return 0;
+	}
+	public int deleteEmp(EmpDto dto) {
+		return 0;
+	}
+
+}

@@ -1,0 +1,28 @@
+package com.kh.first.emp.model.dao;
+
+import java.util.List;
+
+import com.kh.first.emp.model.dto.EmpDto;
+
+public class EmpDao {
+	
+	public int empCount() {
+		return 0;
+	}
+	public EmpDto selectOneEmp(int empno) {
+		return null;
+	}
+	public List<EmpDto> selectListEmp(int startPage, int limit) {
+		return null;
+	}
+	public int insertEmp(EmpDto dto) {
+		return 0;
+	}
+	public int updateEmp(EmpDto dto) {
+		return 0;
+	}
+	public int deleteEmp(EmpDto dto) {
+		return 0;
+	}
+
+}

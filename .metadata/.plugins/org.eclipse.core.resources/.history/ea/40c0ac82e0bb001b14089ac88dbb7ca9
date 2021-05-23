@@ -1,0 +1,5 @@
+package com.kh.first.dept.model.service;
+
+public interface DeptService {
+
+}
