@@ -6,9 +6,24 @@
 		<result property="dname" column="dname"/>
 		<result property="loc" column="loc"/>
 	</resultMap>
-	
-	<!-- Dept리스트 -->
+	<resultMap type="DeptDto" id="resultDept2">
+		<id property="deptno" column="deptno"/>
+		<result property="dname" column="dname"/>
+		<result property="loc" column="loc"/>
+	</resultMap>
+	<!-- 사원리스트 -->
 	<select id="selectDept" resultType="arraylist" resultMap="resultDept">
-		SELECT * FROM DEPT
+		<![CDATA[ 
+		SELECT * FROM dept
+		]]>
 	</select>
+
+	<!-- 사원추가 -->
+	<insert id="insertDept" parameterType="DeptDto" statementType="PREPARED" flushCache="true">
+	<![CDATA[ 
+		INSERT INTO dept 
+		VALUES 
+			(#{deptno}, #{dname}, #{loc})
+	]]>
+	</insert>
 </mapper>

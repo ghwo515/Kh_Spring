@@ -6,15 +6,21 @@
 		<result property="ename" column="ename"/>
 		<result property="deptno" column="deptno"/>
 	</resultMap>
-
+	
 	<!-- 사원리스트 -->
 	<select id="selectEmp" resultType="arraylist" resultMap="resultEmp">
+		<![CDATA[ 
 		SELECT * FROM EMP
+		]]>
 	</select>
-	
+
 	<!-- 사원추가 -->
 	<insert id="insertEmp" parameterType="EmpDto" statementType="PREPARED" flushCache="true">
-		INSERT INTO EMP (EMPNO, ENAME, DEPTNO) 
-		VALUES (#{empno}, #{ename}, #{deptno})	
+	<![CDATA[ 
+		INSERT INTO EMP 
+			(EMPNO, ENAME, DEPTNO) 
+		VALUES 
+			(#{empno}, #{ename}, #{deptno})
+	]]>
 	</insert>
 </mapper>

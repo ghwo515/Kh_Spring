@@ -7,6 +7,12 @@
 <title>Insert title here</title>
 </head>
 <body>
-index 파일입니다.
+Index 파일입니다.
+<P>  The time on the server is ${serverTime}. </P>
+<hr>
+${message }
+<hr>
+${aaa }
+<hr>
 </body>
 </html>

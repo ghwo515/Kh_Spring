@@ -9,7 +9,7 @@ import com.kh.first.emp.model.dao.EmpDao;
 import com.kh.first.emp.model.dto.EmpDto;
 
 @Service("empService")
-public class EmpServiceImpl implements EmpService{
+public class EmpServiceImpl implements EmpService {
 	@Autowired
 	private EmpDao empDao;
 	
@@ -24,8 +24,8 @@ public class EmpServiceImpl implements EmpService{
 	}
 
 	@Override
-	public List<EmpDto> selectListEmp(int startPage, int limit) {
-		return empDao.selectListEmp(startPage, limit);
+	public List<EmpDto> selectListEmp(int currentPage, int limit) {
+		return empDao.selectListEmp(currentPage, limit);
 	}
 
 	@Override
@@ -42,5 +42,5 @@ public class EmpServiceImpl implements EmpService{
 	public int deleteEmp(EmpDto dto) {
 		return empDao.deleteEmp(dto);
 	}
-	
+
 }
